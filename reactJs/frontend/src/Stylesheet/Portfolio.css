@@ -1,0 +1,264 @@
+/* portifilo heading */
+
+.portifolioheading {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.portifolioheading h3 {
+  color: #4154f1;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.portifolioheading h2 {
+  font-size: 3.5rem;
+  color: #012970;
+}
+
+/* gallery working */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 6rem;
+  position: relative;
+}
+
+.gallery img {
+  width: 35rem;
+
+  height: 275px;
+}
+
+/* filter button  */
+
+.filterbutton {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.filterbutton button {
+  width: 60px;
+  outline: none;
+  font-size: 2rem;
+  border: none;
+  background-color: unset;
+  padding: 8px;
+  margin: 0 15px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .gallery {
+    padding: 2rem;
+  }
+
+  .filterbutton button {
+    width: 50px;
+
+    margin: 0 0;
+  }
+}
+
+/* here work on card slide effect  gallery*/
+
+.allimages:hover {
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+.circle {
+  display: flex;
+}
+
+.circle div {
+  background-color: #1a4da5;
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  border-radius: 50%;
+  opacity: 80%;
+}
+
+.allimages {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover {
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 6rem;
+  width: 35rem;
+  height: 275px;
+  background-color: rgba(238, 238, 237, 0.562);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  animation-name: wdithheight;
+  animation-duration: 0.3s;
+  animation-play-state: running;
+}
+
+@keyframes wdithheight {
+  0% {
+    top: 33px;
+  }
+
+  50% {
+    width: 30rem;
+    height: 200px;
+  }
+
+  100% {
+    width: 35rem;
+    height: 275px;
+  }
+}
+
+.hover h2 {
+  color: #012970;
+  font-size: 2.4rem;
+}
+
+.hover h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #0952cf;
+  margin: -20px 0;
+}
+
+.gallery :hover .hover {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hover {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* here work on testmonials */
+
+.testmonialsheading {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.testmonialsheading h3 {
+  color: #4154f1;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.testmonialsheading h2 {
+  font-size: 3.5rem;
+  color: #012970;
+}
+
+.testmonialscards {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  row-gap: 40px;
+  column-gap: 20px;
+  position: relative;
+}
+
+.trestmonialscard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 30px;
+  align-items: center;
+  width: 30rem;
+  height: 45rem;
+  background-color: rgb(243, 240, 240);
+}
+
+.trestmonialscard p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #999;
+  font-style: italic;
+}
+
+.trestmonialscard h3 {
+  font-size: 16px;
+  color: #999;
+}
+
+.trestmonialscard h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.testmonialscards img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+
+.carasolcircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carasolcircle div {
+  border: 1px solid #0952cf;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  border-radius: 50%;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .testmonialscards > :nth-child(1) {
+    display: none !important;
+  }
+
+  .testmonialscards > :nth-child(3) {
+    display: none !important;
+  }
+
+  .trestmonialscard {
+    width: auto;
+    height: auto;
+  }
+
+  .testmonialscards {
+    width: auto;
+
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .testmonialscards {
+    padding: 2rem;
+  }
+}

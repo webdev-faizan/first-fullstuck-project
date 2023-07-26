@@ -1,0 +1,186 @@
+/* team heading */
+.Teamheading {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.Teamheading h3 {
+  color: #4154f1;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.Teamheading h2 {
+  font-size: 3.5rem;
+  color: #012970;
+}
+
+/* team heading end */
+
+/* tead infomation */
+
+.teamdeatail {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 40px;
+  padding: 0 8rem;
+  column-gap: 15px;
+}
+
+.individualDetail {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 26rem;
+  height: 464px;
+  background-color: rgb(243, 240, 240);
+  position: relative;
+
+  overflow: hidden;
+  z-index: -2;
+}
+
+.individualDetail p {
+  padding: 0 30px;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #5e5e5e;
+  font-style: italic;
+}
+
+.individualDetail h3 {
+  font-size: 16px;
+  color: #aaaaaa;
+  margin: 4px 0;
+  font-weight: lighter;
+}
+
+.individualDetail h2 {
+  color: #012970;
+  font-size: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individualDetail img {
+  width: 100%;
+}
+
+.individualDetail h2::before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "\2107";
+  background-color: rgb(255, 255, 255);
+  height: 140px;
+  width: 30px;
+  top: 6rem;
+  right: -31px;
+  transition: all 0.1s;
+  transition-delay: 0.3s;
+  border-radius: 4px;
+  z-index: -2;
+}
+
+@media screen and (max-width: 1170px) {
+  .individualDetail {
+    padding: 0 0 2rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .teamdeatail {
+    padding: 0 0;
+    column-gap: 7px;
+  }
+
+  .individualDetail {
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .teamdeatail {
+    padding: 0 0;
+    column-gap: 7px;
+  }
+
+  .individualDetail {
+    width: 90%;
+    height: auto;
+  }
+
+  .individualDetail h2::before {
+    top: 24%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .individualDetail h2::before {
+    top: 60px;
+  }
+}
+
+.individualDetail:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.individualDetail:hover h2::before {
+  right: 16px;
+}
+
+/* our client */
+/* team heading */
+.clientheading {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.clientheading h3 {
+  color: #4154f1;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.clientheading h2 {
+  font-size: 3.5rem;
+  color: #012970;
+}
+.clients {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 3rem;
+  /* flex-wrap: wrap; */
+  height: 50px;
+  overflow-y: hidden;
+  /* overflow-x: scroll; */
+}
+.clients img {
+  width: 100px;
+}
+
+.clientcircle {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.clientcircle div {
+  border: 2px solid #0f54cc;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  border-radius: 50%;
+  opacity: 80%;
+  z-index: -2;
+}

@@ -1,0 +1,59 @@
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #3446ec;
+}
+
+::-webkit-scrollbar-corner {
+  border: 10px solid gray;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(99, 199, 32);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  background-color: rgb(100, 226, 15);
+
+  cursor: pointer;
+}
+::-webkit-scrollbar:hover {
+  background-color: #142aee;
+}
+/* 
+button:hover {
+  background-color: rgb(7, 62, 243) !important;
+  transition: all 0.3s;
+  cursor: pointer;
+} */
+
+/* img:hover {
+  cursor: grab;
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.faizan img:hover {
+  transform: scale(1);
+} */
+body {
+  overflow-x: hidden !important;
+}
+@media screen and (max-width: 500px) {
+  .bgImgCoverDiv {
+    height: auto !important;
+  }
+  .prophileImg img {
+    margin: auto;
+  }
+  .bgimage .imageSelection {
+    bottom: 5rem;
+  }
+  /* #username   { */
+    /* position: relative; */
+    /* font-size: 18px; */
+    /* left: -142px; */
+    /* top: 130px; */
+    /* width: 120px; */
+  /* } */
+}

@@ -1,0 +1,241 @@
+/* services header */
+
+.servicesheader {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicesheader p {
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: #012970;
+  font-weight: 700;
+  text-align: center;
+}
+
+.servicesheader h2 {
+  font-size: 2rem;
+  color: rgb(65, 84, 241);
+}
+
+/* working on boxes in services */
+.servicesBoxes {
+  padding: 0 100px;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.servicesBox {
+  border-radius: 2rem;
+  width: 35rem;
+  height: 44rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  padding: 4rem;
+}
+
+.servicesBox h2 {
+  font-size: 3rem;
+  color: rgb(68, 68, 68);
+  font-weight: 700;
+}
+
+.servicesBox p {
+  font-size: 2rem;
+  color: rgba(68, 68, 68, 0.856);
+}
+
+@media screen and (max-width: 1200px) {
+  .servicesBoxes {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .servicesBoxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* here end services boxes */
+
+/* here start pricing section */
+
+.pricingcards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pricingDetail {
+  margin-top: 3rem;
+
+  padding: 3rem 0;
+  background-color: #eeeeee;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.pricingDetail h2 {
+  color: #07d5c0;
+  font-size: 2rem;
+}
+
+.pricingDetail :nth-child(2) :nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pricingDetail :nth-child(2) :nth-child(2) {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.pricingDetail :nth-child(2) :nth-child(3) {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(158, 153, 78);
+}
+
+.pricingDetail img {
+  width: 200px;
+  padding: 2rem;
+}
+
+.pricingDetail p {
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.pricingDetail button {
+  border: 1px solid #4154f1;
+  color: #4154f1;
+  outline: none;
+  margin: 1rem;
+  font-size: 16px;
+  padding: 0.7rem 2.7rem;
+  border-radius: 19px;
+}
+
+.pricingDetail button:hover {
+  background-color: #4154f1;
+  color: white;
+}
+
+@media screen and (max-width: 1130px) {
+  .pricingcards {
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+}
+
+.pricingDetail:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.introduction {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #4154f1;
+  color: #fff;
+  text-align: center;
+}
+
+/* frequently ask question */
+
+.questionheading {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.questionheading h3 {
+  color: #4154f1;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.questionheading h2 {
+  font-size: 3.5rem;
+  color: #012970;
+}
+
+.faqlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  padding: 0 16rem;
+}
+
+.questionAnswer {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+}
+
+.questionAnswer h2 {
+  color: #444444;
+  font-size: 16px;
+}
+
+.questionAnswer p {
+  height: 20px;
+}
+
+.questionAnswer p {
+  color: #212529;
+  font-size: 2rem;
+  margin: 1rem 0;
+  height: max-content;
+}
+.rotate90 {
+  transform: rotate(90deg);
+}
+.rotate160 {
+  transform: rotate(90deg);
+}
+.questionAnswer .arrow {
+  font-size: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  .faqlist {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .faqlist {
+    grid-template-columns: 1fr;
+    padding: 0 10rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .faqlist {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .servicesheader {
+    padding: 0 1rem;
+    /* background-color: red; */
+  }
+}

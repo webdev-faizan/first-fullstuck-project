@@ -1,0 +1,437 @@
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  /* width: 97vw; */
+  padding: 0 120px;
+  margin-top: -10rem;
+}
+
+/* content  */
+
+.about .content {
+  width: 40%;
+}
+
+.content h2 {
+  text-align: start;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+
+  font-weight: bold;
+  font-weight: 700;
+  color: #012970;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: #4154f1;
+}
+
+.about p {
+  font-size: 2rem;
+  color: #444444;
+
+  margin: 3rem 0;
+}
+
+/* image */
+
+.about img {
+  margin-top: 5rem;
+  height: 65%;
+}
+
+.about button {
+  font-size: 2rem;
+  width: 23rem;
+  height: 6.5rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+}
+
+@media screen and (max-width: 1370px) {
+  .about {
+    padding: 0 33px;
+  }
+
+  .about .content {
+    width: 60%;
+    padding: 0px;
+  }
+
+  .about > img {
+    margin-left: 2rem;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .about {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .about img {
+    width: 80%;
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about .content {
+    margin: 1rem 0;
+    width: 95%;
+  }
+}
+
+/* values */
+
+.values {
+  width: 98vw;
+}
+
+.valuesinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valuesinfo h3 {
+  font-size: 2rem;
+  color: #4154f1;
+}
+
+.valuesinfo h2 {
+  font-size: 5rem;
+  margin-top: 1rem;
+  color: #012970;
+}
+
+.valuesBoxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 246, 246);
+  width: 40rem;
+  height: 50rem;
+
+  box-shadow: 0px 0 5px rgb(1 41 112 / 8%);
+}
+
+.valuesBoxes p {
+  font-size: 2rem;
+  width: 30rem;
+}
+
+.valuesBoxes h2 {
+  font-size: 2.4rem;
+  margin: 22px 0px;
+}
+
+.valuesBoxes img {
+  width: 30rem;
+}
+
+@media screen and (max-width: 700px) {
+  .values h2 {
+    font-size: 2rem;
+  }
+}
+
+/* count */
+
+.count {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  row-gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.countbox {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background-color: rgb(255, 246, 246);
+
+  width: 25rem;
+  height: 12rem;
+}
+
+.countbox h2 {
+  font-size: 3rem;
+  color: #0b198f;
+}
+
+.countbox p {
+  font-size: 2rem;
+  color: #444444;
+}
+
+.countbox span {
+  color: forestgreen;
+  font-size: 4rem;
+  position: relative;
+  top: 0px;
+  left: -50;
+}
+
+/* features */
+
+.featureheader {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.featureheader h3 {
+  font-size: 2rem;
+  color: #4154f1;
+}
+
+.featureheader h2 {
+  font-size: 5rem;
+  margin-top: 2rem;
+  color: #012970;
+}
+
+@media screen and (max-width: 700px) {
+  .featureheader h2 {
+    font-size: 2rem;
+  }
+}
+
+/* feature content */
+
+.featurePlaning {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 33px;
+  justify-content: space-evenly;
+}
+
+.featurePlaning img {
+  width: 40%;
+}
+
+.featureminBoxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.fetureMinBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 246, 246);
+
+  padding: 2rem;
+}
+
+.fetureMinBox h2 {
+  color: #012970;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.fetureMinBox > div {
+  width: 24px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(255, 246, 246);
+}
+
+.fetureMinBox:hover > div {
+  background: #4154f1;
+}
+
+@media screen and (max-width: 930px) {
+  .featurePlaning img {
+    width: 90%;
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .featureminBoxes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* working on featue tabs */
+
+.featurestabs {
+  display: flex;
+  padding: 0 100px;
+}
+
+.featurestabs img {
+  width: 50%;
+}
+
+.tabscontent h2,
+.tabscontent h3 {
+  font-size: 16px;
+  color: #012970;
+}
+
+.tabscontent p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #444444;
+}
+
+.toogleButton {
+  display: flex;
+  width: 60%;
+}
+
+.tabheading {
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: #012970;
+  font-weight: 700;
+}
+
+.toogleButton h2 {
+  color: #012970;
+
+  margin: 0 8px;
+}
+
+.tooglecontent {
+  width: 80%;
+  margin: 3rem 0;
+}
+
+.none {
+  display: none !important;
+}
+
+@media screen and (max-width: 1150px) {
+  .featurestabs {
+    flex-wrap: wrap;
+  }
+
+  .tooglecontent {
+    width: 95%;
+  }
+
+  .featurestabs img {
+    width: 95%;
+  }
+
+  .toogleButton {
+    display: flex;
+    margin-top: 9rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tooglecontent {
+    width: 100%;
+  }
+
+  .featurestabs {
+    display: flex;
+    padding: 0 2.5rem;
+  }
+
+  .featurestabs img {
+    width: 100%;
+  }
+
+  .toogleButton {
+    display: flex;
+    width: auto;
+  }
+}
+
+/* last poartion of about */
+/* feature icon */
+
+.featureheader {
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: #012970;
+  font-weight: 700;
+}
+
+.featuresIcons {
+  display: flex;
+  padding: 0 10rem;
+  gap: 10rem;
+  background-color: rgb(255, 246, 246);
+}
+
+.featureiconboxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.featuresIcons img {
+  width: 30%;
+}
+
+.featuresIcons h2 {
+  font-size: 2.3rem;
+  color: #012970;
+}
+
+.featuresIcons p {
+  margin: 2rem 0 0;
+  font-size: 2rem;
+  color: #444444;
+}
+
+@media screen and (max-width: 1200px) {
+  .featuresIcons img {
+    width: 100%;
+  }
+
+  .featuresIcons {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .featureiconboxs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .featuresIcons {
+    padding: 0 0;
+  }
+
+  .featureiconboxs {
+    padding: 5rem;
+  }
+}

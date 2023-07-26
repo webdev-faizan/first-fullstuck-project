@@ -1,0 +1,165 @@
+/* navbar */
+
+.navlink {
+  text-decoration: none !important;
+}
+.active {
+  /* background-color: red; */
+  color: red;
+}
+
+.mainNavBar {
+  height: 8rem;
+  line-height: 8rem;
+  background-color: rgb(255, 255, 255);
+  color: #4154f1;
+  display: flex;
+  position: sticky;
+  top: 1%;
+
+  font-size: 2rem;
+  justify-content: space-around;
+  z-index: 555;
+}
+
+.mainNavBar img {
+  vertical-align: 0%;
+}
+.mainNavBar ul button {
+  margin-top: 23px;
+  margin-left: 32px;
+  background-color: #4154f1;
+  color: aliceblue;
+  height: 40px;
+  width: 143px;
+  font-size: 2rem;
+  padding: 0rem 1.5rem;
+  border-radius: 0.6rem;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainNavBar ul {
+  display: flex;
+  font-size: 2rem;
+}
+
+.mainNavBar ul li {
+  margin-left: 22px;
+  font-weight: bold;
+  transition: ease-in-out 0.2s;
+}
+
+/* side bar */
+
+.haumbargar div {
+  z-index: 33;
+  width: 2.6rem;
+  margin: 0.3rem 0;
+  height: 0.3rem;
+  background-color: #4154f1;
+}
+
+.haumbargar {
+  display: none;
+
+}
+
+/* log */
+
+.log span {
+  font-size: 3.4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  /* navbar */
+  .mainNavBar {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .mainNavBar ul button {
+    width: 90%;
+  }
+
+  .mainNavBar ul {
+    display: none;
+
+  }
+
+  .log {
+    display: block;
+    margin-left: 10%;
+  }
+
+  /* .mainNavBar bar background color */
+  .cross {
+    position: relative;
+  }
+
+  .cross::before {
+    content: " X";
+    position: absolute;
+    z-index: 999;
+    font-size: 4rem;
+    color: rgb(209, 209, 209);
+    width: 4rem;
+    margin: 2.1rem -22px;
+    height: 0.7rem;
+  }
+
+  .cross .hidden {
+    display: none;
+  }
+
+  .haumbargar {
+    line-height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    right: 10%;
+    top: 2rem;
+  }
+
+  ul li {
+    padding-left: 2rem;
+  }
+
+  /* .mainNavBar bar toogle */
+
+  .block {
+    display: flex !important;
+    flex-direction: column;
+    background-color: rgb(211, 214, 221);
+    width: 90vw;
+    margin: auto;
+    padding-bottom: 2rem;
+    z-index: 1;
+    transition: all ease-in-out.3s;
+    padding-bottom: 10rem;
+  }
+
+  /* navbavr background-color */
+
+  .background {
+    content: "";
+    position: absolute;
+    top: -15px;
+    height: 106vh;
+    width: 100vw;
+    background: rgba(1, 22, 61, 0.9);
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainNavBar ul button {
+    margin: 0 auto;
+  }
+}

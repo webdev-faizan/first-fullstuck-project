@@ -1,0 +1,13 @@
+# Ignore compiled files
+*.o
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore directories
+target/
+node_modules/
+/node_modules
+*/node_modules
+
